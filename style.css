@@ -4,11 +4,22 @@
     font-size: 20px;
     font-weight: 400;
 }
-
+header {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+  }
 .header-links {
-    float: left;
     list-style: none;
     padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
   }
   
   .header-links li {
@@ -17,9 +28,12 @@
   }
   
   .header-social-icons {
-    float: right;
     list-style: none;
     padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
    
   }
   
@@ -45,12 +59,8 @@
     
   }
   
-  header {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    background-color: lightblue;
-   
-  }
+  /* end of header */
+
   .nav-left {
     text-decoration: none;
     float: left;
