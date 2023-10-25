@@ -50,6 +50,10 @@
     </header>
 <!-- The header and social media links end here -->
 
+<nav class="nav">
+  <img src="Images/logo.webp" height="80px" alt=""> 
+</nav>
+
 <!-- Cards area -->
 <div class="cards">
   <article>
@@ -81,15 +85,10 @@
   </article>
 </div>
 
-    <nav class="nav">
-       <img src="Images/logo.webp" height="100px" alt=""> 
-    </nav>
-
     <!-- Thz main - map is here -->
     <main class="main">
       <h2>Click to read my blog</h2>
       <div class="map-view">
-<img name="image-map" src="Images/africa.webp" usemap="#image-map">
 
 <img src="Images/kinshasa.webp" alt="DRC" class="hover-image" style="display: none; position: absolute; top: 480px; left: 474px;">
 <img src="Images/Karera.jpg" alt="Burundi" class="hover-image" style="display: none; position: absolute; top: 459px; left: 587px;">
@@ -97,11 +96,13 @@
 
 
 
+<img src="Images/africa.webp" usemap="#image-map">
+
 <map name="image-map">
-    <area target="_self" alt="Oman" title="Oman" href="oman.html" coords="890,54,934,148" shape="rect">
-    <area target="_self" alt="DRC" title="DRC" href="kinshasa.html" coords="474,480,402,475,405,513,486,527" shape="poly">
-    <area target="_self" alt="Burundi" title="Burundi" href="burundi.html" coords="587,459,33" shape="circle">
-    <area target="_self" alt="Kenya" title="Kenya" href="kenya.html" coords="742,357,679,412" shape="rect">
+    <area target="_self" alt="DRC" title="DRC" href="kinshasa.html" coords="407,379,546,562" shape="rect">
+    <area target="_self" alt="Burundi" title="Burundi" href="burundi.html" coords="565,428,624,475" shape="rect">
+    <area target="_self" alt="Kenya" title="Kenya" href="kenya.html" coords="653,345,752,452" shape="rect">
+    <area target="_self" alt="Oman" title="Oman" href="oman.html" coords="881,40,932,148" shape="rect">
 </map>
 </div>
     </main>
@@ -162,6 +163,12 @@ toggleThemeButton.addEventListener('click', () => {
   document.querySelector('link[rel="stylesheet"][href="dark-theme.css"]').disabled = !currentTheme;
   document.querySelector('link[rel="stylesheet"][href="light-theme.css"]').disabled = currentTheme;
 });
+
+function toggleHoverImage(imageName) {
+  var hoverImage = document.querySelector('.hover-image[src="' + imageName + '"]');
+  hoverImage.style.display = hoverImage.style.display === 'none' ? 'block' : 'none';
+}
+
 </script>
 </body>
 </html>
