@@ -9,8 +9,8 @@
 .container {
   display: grid;
   grid-template-columns: 12.5em 1fr 12.5em;
-  grid-template-rows: 0.2fr 0.2fr 1fr 1fr 0.5fr 0.2fr;
-  height: 100vh;
+  grid-template-rows: 0.1fr 0.2fr 0.6fr 1fr 0.5fr 0.2fr;
+  /* height: 100vh; */
   grid-template-areas: 
   "header header header"
   "nav nav nav"
@@ -22,7 +22,7 @@
 
 /* Start of header  */
 header {
-    background-color: lightblue;
+    background-color: rgb(253, 141, 43);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -68,12 +68,6 @@ header {
   
   
   /* end of header */
-
-  hr {
-    border: 10px solid #f35252;
-    height: 1px;
-    width: 100%;
-  }
   
 
   .nav-left {
@@ -82,45 +76,85 @@ header {
   }
   
   .nav {
-   padding-top: 5px;
-    background-color: rgb(88, 8, 8);
+   padding-top: 50px;
+    background-color: rgb(240, 240, 240);
     text-align: center;
     justify-content: center;
+    align-items: center;
     grid-area: nav;
   }
-
+/* The cards are here buddy */
   .cards {
-    background-color: rgb(248, 54, 6);
+    background-color: rgb(49, 8, 186);
     grid-area: cards;
+    height: fit-content;
   }
 
   article {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   article section {
     flex-grow: 1;
-    flex-basis: 30%;
-    border: 1px silver solid;
-    box-shadow: 10px 10px 19px -4px rgba(76, 75, 75, 0.519);
-    padding: 16px;
-    margin: 16px;
+    flex-basis: 20%;
+    box-shadow:#000;
+    padding: 0;
+    margin: 20px;
     clear: both;
     overflow:hidden;
     height: fit-content;
     box-sizing: border-box;
   }
+  section {
+    position: relative;
+  }
+  
+  .title-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(207, 11, 11, 0.785);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+ 
+
+  /* End of cards and beginning the main content */
   
   .main {
-    background-color: rgb(28, 31, 197);
+    background-color: rgb(4, 233, 103);
     grid-area: main;
   }
+  .map-view{
+    align-items: center;
+    justify-content: center;
+  }
+  .hover-image {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  map[name="image-map"] area:hover + .hover-image {
+    display: block;
+  }
+  
+
+/* The sidebar and chill */
 
   .sidebar {
     background-color: rgb(9, 201, 25);
     grid-area: sidebar;
   }
-  
+  .sidebar {
+    background-color: black;
+  }
+
+  /* The footer starts  */
   .footer {
     background-color: orange;
     grid-area: footer;
@@ -144,4 +178,18 @@ a, button, input, select, textarea {
   a:focus, button:focus, input:focus, select:focus, textarea:focus {
     border: 1px solid #00f;
   }
-  
+   /* For smaller screens  */
+  @media only screen and (max-width:768px){
+    .container {
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.25fr 0.1fr;
+      grid-template-areas: 
+      "header"
+      "nav nav nav"
+      "cards"
+      "main"
+      "sidebar"
+      "footer";
+    }
+      } 
