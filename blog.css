@@ -3,13 +3,13 @@
     padding: 0;
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box; 
 }
 .container {
   display: grid;
   grid-template-columns: 1fr 0.2fr;
-  grid-template-rows: 0.07fr 0.1fr 0.6fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.04fr 0.05fr 1fr 0.1fr 0.1fr  0.2fr;
   grid-template-areas: 
   "header header"
   "nav nav"
@@ -32,7 +32,7 @@ header {
     width: 20%;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 30px;
   }
   
   .header-links li {
@@ -46,7 +46,7 @@ header {
     width: 20%;
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 30px;
   }
   
   .header-social-icons li {
@@ -61,6 +61,7 @@ header {
   .header-social-icons svg {
     width: 20px;
     height: 20px;
+    color: black;
   }
   /* End of header and start of nav bar */
   .nav{
@@ -75,16 +76,23 @@ header {
     margin: 0 auto;
     display: block;
   }
-  
-  .cards {
-    grid-area: cards;
-  }
 
   /* Content styling start here */
+
+  .cards {
+    grid-area: cards;
+    background-color: whitesmoke;
+  }
   .article {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    background-color: white;
+  }
+  .article h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
   }
   
   .content {
@@ -99,6 +107,18 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
+    text-align:left;
+  }
+  .row h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  ul li {
+    list-style-position: outside;
+    list-style-type: circle;
+    list-style-image: url('https://i.imgur.com/smaller-nicer-dot.png');
+    padding-left: 10px;
+    
   }
   
   .full-width-image {
