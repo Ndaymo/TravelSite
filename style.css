@@ -90,9 +90,9 @@ header {
 
 /* The cards are here buddy */
   .cards {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(251, 237, 224);;
     grid-area: cards;
-    height: fit-content;
+    
   }
 
   article {
@@ -121,17 +121,17 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(207, 11, 11, 0.785);
+    background-color: rgba(224, 0, 0, 0.785);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
   }
  
 
   /* End of cards and beginning the main content */
   
   .main {
-    background-color: rgb(4, 233, 103);
+    background-color: rgb(240, 240, 240);
     grid-area: main;
   }
   .map-view img{
@@ -151,36 +151,30 @@ header {
   .hover-image:hover {
     display: block;
   }
+  main h2 {
+    text-align: center;
+    padding: 20px;
+  }
   
 
 /* The sidebar and chill */
 
   .sidebar {
-    background-color: rgb(9, 201, 25);
+    background-color: rgb(240, 240, 240);
     grid-area: sidebar;
-  }
-  .sidebar {
-    background-color: rgb(234, 10, 152);
   }
 
   /* The footer starts  */
   .footer {
-    background-color: orange;
+    background-color: rgb(240, 240, 240);
     grid-area: footer;
   }
   
-  .container2{
-    display: grid;
-    grid-template-columns: 12.5em 1fr 12.5em;
-    grid-template-rows: auto 1fr auto;
-    padding-top: 5em;
-
-  }
 
   Style all keyboard-focusable elements
 a, button, input, select, textarea {
     outline: none;
-    border: 1px solid #000;
+    border: 1px solid #3c3c3c;
   }
   
   /* Style keyboard-focusable elements when they are focused */

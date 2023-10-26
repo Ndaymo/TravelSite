@@ -82,6 +82,7 @@ header {
   .cards {
     grid-area: cards;
     background-color: whitesmoke;
+    padding-top: 20px;
   }
   .article {
     width: 100%;
@@ -94,7 +95,12 @@ header {
     text-align: center;
     padding: 1rem;
   }
-  
+  .subtitle {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .content {
     display: flex;
     flex-wrap: wrap;
