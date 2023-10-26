@@ -9,7 +9,7 @@
 .container {
   display: grid;
   grid-template-columns: 12.5em 1fr 12.5em;
-  grid-template-rows: 0.07fr 0.1fr 0.6fr 0.6fr 0.5fr 0.2fr;
+  grid-template-rows: 0.07fr 0.1fr 0.6fr 0.6fr 0.5fr 0.07fr;
   grid-template-areas: 
   "header header header"
   "nav nav nav"
@@ -183,11 +183,55 @@ header {
   
   
   /* The footer starts  */
-  .footer {
-    background-color: rgb(240, 240, 240);
+  footer {
     grid-area: footer;
+    background-color: rgb(171, 171, 171);
+    grid-area: footer;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+  }
+  .header-links {
+    list-style: none;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
   }
   
+
+  
+  .footer-social-icons {
+    list-style: none;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+   
+  }
+  
+  .footer-social-icons li {
+    display: inline-block;
+  }
+  
+  
+  .footer-social-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+
+
+
+
+
+
 
   Style all keyboard-focusable elements
 a, button, input, select, textarea {
