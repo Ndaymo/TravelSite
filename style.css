@@ -9,7 +9,7 @@
 .container {
   display: grid;
   grid-template-columns: 12.5em 1fr 12.5em;
-  grid-template-rows: 0.07fr 0.1fr 0.6fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.07fr 0.1fr 0.6fr 0.6fr 0.5fr 0.2fr;
   grid-template-areas: 
   "header header header"
   "nav nav nav"
@@ -141,25 +141,17 @@ header {
   /* End of cards and beginning the main content */
   
   .main {
-    background-color: rgb(240, 240, 240);
+    background-color: #8ab4f8;
     grid-area: main;
+  }
+  main h2{
+    font-size: 30px;
+    color: white;
   }
   .map-view img{
     margin: 0 auto;
     display: block;
-  }
-  .hover-image {
-    display: block;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  map[name="image-map"] area:hover {
-    display: block;
-  }
-  
-  .hover-image:hover {
-    display: block;
+    height:min-content;
   }
   main h2 {
     text-align: center;
@@ -172,8 +164,24 @@ header {
   .sidebar {
     background-color: rgb(240, 240, 240);
     grid-area: sidebar;
+    padding-top: 2%;
   }
-
+  .split-hr {
+    width: 20%;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+  }
+  
+  .split-hr-text {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+  }
+  .sidebar-title {
+    text-align: center;
+  }
+  
+  
   /* The footer starts  */
   .footer {
     background-color: rgb(240, 240, 240);
