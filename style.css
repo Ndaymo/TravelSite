@@ -75,7 +75,6 @@ header {
   }
   
   .nav {
-
     background-color: rgb(240, 240, 240);
     text-align: center;
     grid-area: nav;
@@ -94,7 +93,6 @@ header {
     grid-area: cards;
     
   }
-
   article {
     display: flex;
     flex-wrap: wrap;
@@ -113,18 +111,30 @@ header {
     box-sizing: border-box;
   }
   section {
+    flex-grow: 1;
+    flex-basis: 20%;
+    box-shadow: #000;
+    padding: 0;
+    margin: 20px;
+    clear: both;
+    overflow: hidden;
+    height: fit-content;
+    box-sizing: border-box;
     position: relative;
+    border-top-left-radius: 1% ;
+    border-top-right-radius: 1%;
   }
-  
-  .title-name {
+  button.title-name {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(224, 0, 0, 0.785);
     color: white;
     text-align: center;
-    padding-top: 10px;
+    width: 80%;
+    margin: auto;
   }
  
 
