@@ -180,6 +180,7 @@ header {
   .sidebar-title {
     text-align: center;
   }
+
   
   
   /* The footer starts  */
@@ -187,7 +188,9 @@ header {
     grid-area: footer;
     background-color: rgb(171, 171, 171);
     grid-area: footer;
-    position: sticky;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -224,7 +227,36 @@ header {
     height: 20px;
   }
 
-
+  .sidebar .food-blog {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .sidebar .left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar .food-blog img {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .sidebar .right-column img {
+    margin-bottom: 10px;
+  }
 
 
 

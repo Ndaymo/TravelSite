@@ -9,7 +9,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 0.2fr;
-  grid-template-rows: 0.04fr 0.05fr 1fr 0.1fr 0.1fr  0.2fr;
+  grid-template-rows: 0.04fr 0.05fr 1fr 0.1fr 0.1fr  0.02fr;
   grid-template-areas: 
   "header header"
   "nav nav"
@@ -139,7 +139,7 @@ header {
   /* End of content styling */
 
   .sidebar {
-    background-color: blueviolet;
+    background-color: rgb(240, 240, 240);
     grid-area: sidebar;
   }
 
@@ -150,7 +150,43 @@ header {
   .main {
     grid-area: main;
   }
-.footer {
-    grid-area: footer;
+
+
+/* The footer starts  */
+footer {
+  grid-area: footer;
+  background-color: rgb(171, 171, 171);
+  grid-area: footer;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+.header-links {
+  list-style: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+
+
+.footer-social-icons {
+  list-style: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+ 
+}
+
+.footer-social-icons li {
+  display: inline-block;
 }
   
