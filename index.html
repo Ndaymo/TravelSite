@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holy Grail Layout with CSS Grid</title>
+  <meta name="viewport" content="Author: Ndayishimiye Mohamed, Come travel with me to Africa" />
+  <title>Mo's movements</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="dark-theme.css">
@@ -11,9 +12,13 @@
 
 </head>
 <body>
+  <button onclick="topfunction()" id="top-button" title="scroll up" style="display: none;">
+  <i class="arrow-up"></i>
+  </button>
+  <!-- Scrolling button  -->
   <div class="container">
     <header>
-      <nav>
+      <nav role="navigation">
       <ul class="header-links" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -51,7 +56,7 @@
     </header>
 <!-- The header and social media links end here -->
 
-<nav class="nav">
+<nav class="nav" role="banner">
   <img src="Images/logo.webp" height="80px" alt=""> 
 </nav>
 
@@ -95,7 +100,7 @@
       <h2>Countries I've visited, open to read more</h2>
       <div class="map-view">
 
-<img src="Images/kinshasa.webp" width="200px" alt="DRC" class="hover-image" style="display: none; position: absolute; top: 980px; left: 674px;">
+<img src="Images/kinshasa.webp" width="200px" alt=" A photo of the DRC" class="hover-image" style="display: none; position: absolute; top: 980px; left: 674px;">
 <img src="Images/Karera.jpg" alt="Burundi" class="hover-image" style="display: none; position: absolute; top: 459px; left: 587px;">
 <img src="Images/masai.webp" alt="Kenya" class="hover-image" style="display: none; position: absolute; top: 357px; left: 742px;">
 
@@ -124,12 +129,12 @@
 
       <div class="food-blog">
           <div class="left-column">
-            <img src="Images/burundian-food.webp" width="30px" alt="Image 1">
+            <img src="Images/burundian-food.webp" width="px" alt="Food picture">
           </div>
           <div class="right-column">
-            <img src="Images/rolex.jpg" width="30px" alt="Image 2">
-            <img src="Images/Sambusa.jpg" width="30px" alt="Image 3">
-            <img src="Images/chapati.jpg" width="30px" alt="Image 4">
+            <img src="Images/rolex.jpg" width="30px" alt="Food picture">
+            <img src="Images/Sambusa.jpg" width="30px" alt="Food picture">
+            <img src="Images/chapati.jpg" width="30px" alt="Food picture">
             <img src="Images/umukeke.jpg" width="30px" alt="Image 5">
         </div>
       </div>
@@ -139,8 +144,8 @@
 <!-- The sponsors, thanks to them -->
 
 
-    <footer>
-        <p>Copyright &copy; 2023 My Website</p>
+    <footer role="contentinfo">
+        <p>Copyright &copy; 2023 Mo's</p>
 
         <ul class="footer-social-icons" role="list">
           <li><a  href="index.html" role="button">

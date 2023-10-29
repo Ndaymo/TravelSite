@@ -181,7 +181,38 @@ header {
     text-align: center;
   }
 
+   .sidebar .food-blog {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+  }
   
+  .sidebar .left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+  }
+  
+  .sidebar .food-blog img {
+    width: 60%;
+    height: 50%;
+  }
+  
+  .sidebar .right-column img {
+    margin-bottom: 10px;
+  }
   
   /* The footer starts  */
   footer {
@@ -227,38 +258,26 @@ header {
     height: 20px;
   }
 
-  .sidebar .food-blog {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 50%;
-  }
-  
-  .sidebar .left-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sidebar .right-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .sidebar .food-blog img {
-    width: 30%;
-    height: 30%;
-  }
-  
-  .sidebar .right-column img {
-    margin-bottom: 10px;
-  }
+ /* The scroll up button */
 
-
+  body #top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: rgb(48, 112, 109);
+    color: white;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 16px;
+    border-radius: 4px;
+  }
 
 
 
