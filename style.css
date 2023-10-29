@@ -1,311 +1,280 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-weight: 400;
-    font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 .container {
   display: grid;
   grid-template-columns: 12.5em 1fr 12.5em;
-  grid-template-rows: 0.07fr 0.1fr 0.6fr 0.6fr 0.5fr 0.07fr;
-  grid-template-areas: 
-  "header header header"
-  "nav nav nav"
-  "cards cards cards"
-  "main main main"
-  "sidebar sidebar sidebar"
-  "footer footer footer";
+  grid-template-rows: 0.06fr 0.1fr 0.6fr 0.6fr 0.5fr 0.06fr;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "cards cards cards"
+    "main main main"
+    "sidebar sidebar sidebar"
+    "footer footer footer";
 }
 
 /* Start of header  */
 header {
-    background-color: rgb(253, 141, 43);
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    grid-area: header;
-  }
+  background-color: rgb(253, 141, 43);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  grid-area: header;
+}
 .header-links {
-    list-style: none;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-  }
-  
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 
-  
-  .header-social-icons {
-    list-style: none;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-   
-  }
-  
-  .header-social-icons li {
-    display: inline-block;
-  }
-  
-  .header-links a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-  }
-  
-  .header-social-icons svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  
-  /* end of header */
-  
+.header-social-icons {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
 
-  .nav-left {
-    text-decoration: none;
-    width: 50%;
-  }
-  
-  .nav {
-    background-color: rgb(240, 240, 240);
-    text-align: center;
-    grid-area: nav;
-    display: inline;
-    align-items: center;
-  }
+.header-social-icons li {
+  display: inline-block;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.header-social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+
+/* end of header */
+
+.nav-left {
+  text-decoration: none;
+  width: 50%;
+}
+
+.nav {
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  grid-area: nav;
+  display: inline;
+  align-items: center;
+}
 .nav img {
-  padding:0;
+  padding: 0;
   margin: 0 auto;
   display: block;
 }
 
 /* The cards are here buddy */
-  .cards {
-    background-color: rgb(251, 237, 224);;
-    grid-area: cards;
-    
-  }
-  article {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  article section {
-    flex-grow: 1;
-    flex-basis: 20%;
-    box-shadow:#000;
-    padding: 0;
-    margin: 20px;
-    clear: both;
-    overflow:hidden;
-    height: fit-content;
-    box-sizing: border-box;
-  }
-  section {
-    flex-grow: 1;
-    flex-basis: 20%;
-    box-shadow: #000;
-    padding: 0;
-    margin: 20px;
-    clear: both;
-    overflow: hidden;
-    height: fit-content;
-    box-sizing: border-box;
-    position: relative;
-    border-top-left-radius: 1% ;
-    border-top-right-radius: 1%;
-  }
-  button.title-name {
-    position: absolute;
-    top: 80%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(224, 0, 0, 0.785);
-    color: white;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-  }
- 
+.cards {
+  background-color: rgb(251, 237, 224);
+  grid-area: cards;
+}
+article {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+article section {
+  flex-grow: 1;
+  flex-basis: 20%;
+  box-shadow: #000;
+  padding: 0;
+  margin: 20px;
+  clear: both;
+  overflow: hidden;
+  height: fit-content;
+  box-sizing: border-box;
+}
+section {
+  flex-grow: 1;
+  flex-basis: 20%;
+  box-shadow: #000;
+  padding: 0;
+  margin: 20px;
+  clear: both;
+  overflow: hidden;
+  height: fit-content;
+  box-sizing: border-box;
+  position: relative;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+}
+button.title-name {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(224, 0, 0, 0.785);
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
 
-  /* End of cards and beginning the main content */
-  
-  .main {
-    background-color: #8ab4f8;
-    grid-area: main;
-  }
-  main h2{
-    font-size: 30px;
-    color: white;
-  }
-  .map-view img{
-    margin: 0 auto;
-    display: block;
-    height:min-content;
-  }
-  main h2 {
-    text-align: center;
-    padding: 20px;
-  }
-  
+/* End of cards and beginning the main content */
+
+.main {
+  background-color: #8ab4f8;
+  grid-area: main;
+}
+main h2 {
+  font-size: 30px;
+  color: white;
+}
+.map-view img {
+  margin: 0 auto;
+  display: block;
+  height: min-content;
+}
+main h2 {
+  text-align: center;
+  padding: 20px;
+}
 
 /* The sidebar and chill */
 
-  .sidebar {
-    background-color: rgb(240, 240, 240);
-    grid-area: sidebar;
-    padding-top: 2%;
-  }
-  .split-hr {
-    width: 20%;
-    display: inline-block;
-    border-top: 1px solid #ccc;
-  }
-  
-  .split-hr-text {
-    display: inline-block;
-    margin: 0 10px;
-    text-align: center;
-  }
-  .sidebar-title {
-    text-align: center;
-  }
+.sidebar {
+  background-color: rgb(240, 240, 240);
+  grid-area: sidebar;
+  padding-top: 2%;
+}
+.split-hr {
+  width: 20%;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+}
 
-   .sidebar .food-blog {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 50%;
-  }
-  
-  .sidebar .left-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sidebar .right-column {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 25%;
-  }
-  
-  .sidebar .food-blog img {
-    width: 60%;
-    height: 50%;
-  }
-  
-  .sidebar .right-column img {
-    margin-bottom: 10px;
-  }
-  
-  /* The footer starts  */
-  footer {
-    grid-area: footer;
-    background-color: rgb(171, 171, 171);
-    grid-area: footer;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    
-  }
-  .header-links {
-    list-style: none;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-  }
-  
+.split-hr-text {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+.sidebar-title {
+  text-align: center;
+}
 
-  
-  .footer-social-icons {
-    list-style: none;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-   
-  }
-  
-  .footer-social-icons li {
-    display: inline-block;
-  }
-  
-  
-  .footer-social-icons svg {
-    width: 20px;
-    height: 20px;
-  }
+.sidebar .food-blog {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
 
- /* The scroll up button */
+.sidebar .left-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  body #top-button {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    background-color: rgb(48, 112, 109);
-    color: white;
-    cursor: pointer;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    outline: none;
-    padding: 16px;
-    border-radius: 4px;
-  }
+.sidebar .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
 
+.sidebar .food-blog img {
+  width: 60%;
+  height: 50%;
+}
 
+.sidebar .right-column img {
+  margin-bottom: 10px;
+}
 
+/* The footer starts  */
+footer {
+  grid-area: footer;
+  background-color: rgb(171, 171, 171);
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header-links {
+  list-style: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 
+.footer-social-icons {
+  list-style: none;
+  padding: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
 
+.footer-social-icons li {
+  display: inline-block;
+}
 
-  Style all keyboard-focusable elements
-a, button, input, select, textarea {
-    outline: none;
-    border: 1px solid #3c3c3c;
-  }
-  
-  /* Style keyboard-focusable elements when they are focused */
-  a:focus, button:focus, input:focus, select:focus, textarea:focus {
-    border: 1px solid #00f;
-  }
-   /* For smaller screens  */
-  @media only screen and (max-width:768px){
-    .container {
-      display: grid;
-      grid-template-columns:1fr;
-      grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.25fr 0.1fr;
-      grid-template-areas: 
+.footer-social-icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+Style all keyboard-focusable elements a,
+button,
+input,
+select,
+textarea {
+  outline: none;
+  border: 1px solid #3c3c3c;
+}
+
+/* Style keyboard-focusable elements when they are focused */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #00f;
+}
+/* For smaller screens  */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.25fr 0.1fr;
+    grid-template-areas:
       "header"
       "nav nav nav"
       "cards"
       "main"
       "sidebar"
       "footer";
-    }
-      } 
+  }
+}
