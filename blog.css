@@ -140,17 +140,67 @@ nav ul li {
   
   /* End of content styling */
 
-  .sidebar {
-    background-color: rgb(240, 240, 240);
-    grid-area: sidebar;
-  }
+ 
+/* The sidebar and chill */
 
+.sidebar {
+  background-color: rgb(240, 240, 240);
+  grid-area: sidebar;
+  padding-top: 2%;
+}
+.split-hr {
+  width: 20%;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+}
+
+.split-hr-text {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+.sidebar-title {
+  text-align: center;
+}
+
+.most-popular {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.image {
+  float: left;
+  margin-right: 20px;
+}
+
+.text {
+  width: 50%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+  /* End of sidebar and start of ads */
   .ads { 
     grid-area: ads;
   }
 
   .main {
     grid-area: main;
+    background-color: black;
   }
 
 

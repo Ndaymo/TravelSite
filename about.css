@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .header {
+    background-color: #fff;
+    padding: 20px 0;
+  }
+
+  .header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .header p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .main {
+    padding: 20px 0;
+  }
+
+  .main h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+
+  .main p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
