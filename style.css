@@ -222,9 +222,7 @@ a {
 /* The footer starts  */
 footer {
   grid-area: footer;
-  background-color: rgb(171, 171, 171);
-  grid-area: footer;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -239,6 +237,7 @@ footer {
   justify-content: space-between;
   padding-left: 20px;
 }
+
 
 .footer-social-icons {
   list-style: none;
@@ -256,6 +255,7 @@ footer {
 .footer-social-icons svg {
   width: 20px;
   height: 20px;
+  fill: #000;
 }
 
 Style all keyboard-focusable elements a,

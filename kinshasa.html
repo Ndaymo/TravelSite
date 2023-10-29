@@ -2,16 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta
-      name="viewport"
-      content="Author: Ndayishimiye Mohamed, Come travel with me to Africa"
-    />
-    <title>Mo's movements</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinshasa blog</title>
+    <link rel="stylesheet" href="blog.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;0,800;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -26,7 +29,11 @@
         </nav>
         <ul class="header-social-icons" role="list">
           <li>
-            <a href="#!" role="button">
+            <a
+              href="https://facebook.com/"
+              aria-label="watch more on our facebook"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -42,7 +49,11 @@
             </a>
           </li>
           <li>
-            <a href="#!" role="button">
+            <a
+              href="https://twitter.com/"
+              aria-label="watch more on our twitter"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -58,7 +69,11 @@
             </a>
           </li>
           <li>
-            <a href="#!" role="button">
+            <a
+              href="https://instagram.com/"
+              aria-label="watch more on our instagram"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -74,7 +89,11 @@
             </a>
           </li>
           <li>
-            <a href="#!" role="button">
+            <a
+              href="https://tiktok.com/"
+              aria-label="watch more on our tiktok account"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -90,7 +109,11 @@
             </a>
           </li>
           <li>
-            <a href="#!" role="button">
+            <a
+              href="https://youtube.com/"
+              aria-label="watch more on our facebook"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -107,115 +130,101 @@
           </li>
         </ul>
       </header>
-      <!-- The header and social media links end here -->
-
-      <div class="logo" role="banner">
-        <img src="Images/logo.webp" height="80" alt="" />
+      <div class="logo">
+        <img
+          src="Images/logo.webp"
+          role="logo"
+          height="80px"
+          alt="logo of the website, Mo's element with a selfie on the left and a palm tree on the right"
+        />
       </div>
+      <!-- End of content to be included in every page -->
 
-      <!-- Cards area -->
-      <div class="cards">
-        <article>
-          <section>
-              <img
-                src="Images/Karera.webp"
-                alt="Picture of Karera waterfalls in Burundi"/>
-                <form style="display: inline" class="title-name" action="burundi.html" method="get">
-                  <button>Burundi</button>
-                </form>
-          </section>
-          <section id="Burundi">
-              <img
-                src="Images/masai.webp"
-                alt="A photo of the masai people jumping"/>
-                <form style="display: inline" class="title-name" action="kenya.html" method="get">
-                  <button>Burundi</button>
-                </form>
-          </section>
+      <!-- The main content in the cards class -->
+      <main>
+        <div class="cards">
+          <div class="article">
+            <h1>FOUR THINGS TO DO IN KINSHASA</h1>
+            <div class="subtitle">
+              <p>Written by Mohamed Ndayishimiye</p>
+            </div>
 
-          <section>
-              <img
-                src="Images/Kigali.webp"
-                alt="A view of kigali downtown with buildings"/>
-                <form style="display: inline" class="title-name" action="kigali.html" method="get">
-                  <button>Kigali</button>
-                </form>
-          </section>
-          <section>
-              <img
-                src="Images/Oman.webp"
-                alt="A group of omanis wearing traditional clothing"/>
-                <form style="display: inline" class="title-name" action="burundi.html" method="get">
-                  <button>Oman</button>
-                </form>
-          </section>
-        </article>
-      </div>
+            <div class="content" role="article">
+              <div class="row">
+                <img
+                  src="Images/LOLA.jpg"
+                  width="100%"
+                  alt="Lola ya Bonobo Sanctuary, Kinshasa, DRC"
+                />
+                <h2>Visit the Lola ya Bonobo Sanctuary</h2>
+                <p>
+                  The Lola ya Bonobo Sanctuary is a rescue and rehabilitation
+                  center for bonobos, a type of chimpanzee. It is a great place
+                  to learn about these amazing creatures and to see them up
+                  close.
+                </p>
+              </div>
 
-      <!-- Thz main - map is here -->
-      <main class="main">
-        <h2>Countries I've visited, open to read more</h2>
-        <div class="map-view">
-          <img
-            src="Images/kinshasa.webp"
-            width="200"
-            alt=" A photo of the DRC"
-            class="hover-image"
-            style="display: none; position: absolute; top: 980px; left: 674px"
-          />
-          <img
-            src="Images/Karera.jpg"
-            alt="Burundi"
-            class="hover-image"
-            style="display: none; position: absolute; top: 459px; left: 587px"
-          />
-          <img
-            src="Images/masai.webp"
-            alt="Kenya"
-            class="hover-image"
-            style="display: none; position: absolute; top: 357px; left: 742px"
-          />
+              <div class="row">
+                <img
+                  src="Images/notredame.jpeg"
+                  width="100%"
+                  alt="Notre Dame du Congo Cathedral in Kinshasa"
+                />
+                <h2>2. Visit Notre-Dame du Congo Cathedral</h2>
+                <p>
+                  The Notre-Dame du Congo Cathedral is a beautiful Catholic
+                  cathedral in the heart of Kinshasa. It is one of the largest
+                  cathedrals in Africa, and it is a popular tourist destination.
+                  The cathedral is known for its stunning architecture and its
+                  impressive stained-glass windows.
+                </p>
+              </div>
 
-          <img src="Images/africa.webp" usemap="#image-map" alt="A map of African continent"/>
+              <div class="row">
+                <img
+                  src="Images/congoriver.jpg"
+                  width="100%"
+                  alt="Boat ride of people on the congo riva"
+                />
+                <h2>3. Boat ride at the Congo river</h2>
+                <p>
+                  The Congo River is the second-longest river in the world, and
+                  it flows through Kinshasa. Taking a boat trip on the river is
+                  a great way to see the city from a different perspective. You
+                  can also see some of the wildlife that lives in the river,
+                  such as crocodiles and hippos.
+                </p>
+              </div>
+              <div class="row">
+                <img
+                  src="Images/texaf.jpg"
+                  width="100%"
+                  alt="Texaf Bilembo Cultural Center, Kinshasan"
+                />
+                <h2>4. Go visit Texaf Bilembo Cultural Center</h2>
 
-          <map name="image-map">
-            <area
-              target="_self"
-              alt="DRC"
-              title="DRC"
-              href="kinshasa.html"
-              coords="407,379,546,562"
-              shape="rect"
-            />
-            <area
-              target="_self"
-              alt="Burundi"
-              title="Burundi"
-              href="burundi.html"
-              coords="565,428,624,475"
-              shape="rect"
-            />
-            <area
-              target="_self"
-              alt="Kenya"
-              title="Kenya"
-              href="kenya.html"
-              coords="653,345,752,452"
-              shape="rect"
-            />
-            <area
-              target="_self"
-              alt="Oman"
-              title="Oman"
-              href="oman.html"
-              coords="881,40,932,148"
-              shape="rect"
-            />
-          </map>
+                <p>
+                  The Texaf Bilembo Cultural Center is a great place to learn
+                  about the culture of the Democratic Republic of the Congo. The
+                  center has a museum, an art gallery, and a performance space.
+                  It also hosts a variety of cultural events throughout the
+                  year. These are just a few of the many things to do in
+                  Kinshasa. With its rich culture, stunning scenery, and
+                  friendly people, Kinshasa is a great destination for travelers
+                  of all interests.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-
-      <!-- This is the sidebar -->
+      <section>
+        <div class="ads">
+            <p>Ads pay the bills</p>
+          </div>
+      </section>
+      
 
       <aside class="sidebar">
         <div class="sidebar-title">
@@ -225,26 +234,40 @@
         </div>
 
         <div class="most-popular">
-          <img src="Images/Oman.webp" width="200" alt="Oman Flag" class="image">
+          <img
+            src="Images/Oman.webp"
+            width="200"
+            alt="Oman Flag"
+            class="image"
+          />
           <div class="text">
             <h2>Oman</h2>
-            <p>Oman is a country in Western Asia. It is situated on the southeastern coast of the Arabian Peninsula, and has borders with the United Arab Emirates to the northwest, Saudi Arabia to the west, and Yemen to the southwest. The Gulf of Oman is to the northeast, and the Arabian Sea is to the southeast.</p>
+            <p>
+              Oman is a country in Western Asia. It is situated on the
+              southeastern coast of the Arabian Peninsula, and has borders with
+              the United Arab Emirates to the northwest, Saudi Arabia to the
+              west, and Yemen to the southwest. The Gulf of Oman is to the
+              northeast, and the Arabian Sea is to the southeast.
+            </p>
             <a href="/oman.html">Read more</a>
           </div>
         </div>
-        
       </aside>
 
-      <!-- The sponsors, thanks to them -->
+      <div class="main">
+        <div class="back-up"><a href="#">Scroll to the top</a></div>
+      </div>
 
-
-
-      <footer role="contentinfo">
+      <footer>
         <p>Copyright &copy; 2023 For Educational purposes</p>
 
         <ul class="footer-social-icons" role="list">
           <li>
-            <a href="index.html" role="button">
+            <a
+              href="https://facebook.com/"
+              aria-label="watch more on our facebook"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -260,7 +283,11 @@
             </a>
           </li>
           <li>
-            <a href="index.html" role="button">
+            <a
+              href="https://twitter.com/"
+              aria-label="read more on our twitter"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -276,7 +303,11 @@
             </a>
           </li>
           <li>
-            <a href="index.html" role="button">
+            <a
+              href="https://instagram.com/"
+              aria-label="watch more on our instagram"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -292,7 +323,11 @@
             </a>
           </li>
           <li>
-            <a href="index.html" role="button">
+            <a
+              href="https://tiktok.com/"
+              aria-label="watch more on our tiktok"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -308,7 +343,11 @@
             </a>
           </li>
           <li>
-            <a href="index.html" role="button">
+            <a
+              href="https://youtube.com/"
+              aria-label="watch more on our youtube"
+              role="button"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
