@@ -91,8 +91,10 @@ header {
 article {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10%;
+  padding-right: 10% ;
+  background-color: red;
+ 
 }
 article section {
   flex-grow: 1;
@@ -142,9 +144,19 @@ section button{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  width: 100%;
+  width:80%;
   
 }
+.bio {
+  grid-area: cards;
+  border: 1px solid lime;
+  display: flex;
+}
+.bio img {
+  clip-path: circle();
+  width: 20%;
+}
+
 /* End of cards and beginning the main content */
 
 .main {
@@ -276,7 +288,26 @@ textarea:focus {
   border: 1px solid #00f;
 }
 /* For smaller screens  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:1024px) and (min-width: 768px)  {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.25fr 0.1fr;
+    grid-template-areas:
+      "header"
+      "nav nav nav"
+      "cards"
+      "main"
+      "sidebar"
+      "footer";
+  }
+  article section  {
+    flex-basis: 40%;
+    background-color: #00f;
+    
+  }
+}
+@media (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -288,5 +319,13 @@ textarea:focus {
       "main"
       "sidebar"
       "footer";
+  }
+  .cards {
+display: flex;
+flex-basis: 1;
+flex-direction: column;
+  }
+  article section  {
+    flex-basis: 100%;  
   }
 }
