@@ -1,11 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
   display: grid;
@@ -202,7 +201,7 @@ a {
     grid-area: ads;
   }
 
-  /* The main is here tho nothing */
+  /* The main is here */
   .main {
     grid-area: main;
     color: #00f;
@@ -212,6 +211,9 @@ a {
   padding-top: 100px;
   display: flex;
   justify-content: center;
+}
+a {
+  color: #00f;
 }
 
 /* The footer starts  */

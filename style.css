@@ -3,8 +3,9 @@
   padding: 0;
   font-size: 20px;
   font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
   display: grid;
@@ -92,48 +93,27 @@ article {
   display: flex;
   flex-wrap: wrap;
   padding-left: 10%;
-  padding-right: 10% ;
-  background-color: red;
- 
-}
-article section {
-  flex-grow: 1;
-  flex-basis: 20%;
-  box-shadow: #000;
-  padding: 0;
-  margin: 20px;
-  clear: both;
-  overflow: hidden;
-  height: fit-content;
-  box-sizing: border-box;
+  padding-right: 10%;
 }
 section {
+  display: inline-block;
   flex-grow: 1;
-  flex-basis: 20%;
-  box-shadow: #000;
   padding: 0;
   margin: 20px;
   clear: both;
   overflow: hidden;
+  width: 20%;
   height: fit-content;
-  box-sizing: border-box;
-  position: relative;
   border-top-left-radius: 1%;
   border-top-right-radius: 1%;
+  position: relative;
+  border: 1px dotted #00f;
 }
-form.title-name {
+
+section a {
   position: absolute;
   top: 80%;
-  transform: translateY(-50%);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: none;
-  color: white;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-section button{
+  left: 10%;
   background-color: rgba(224, 0, 0, 0.785);
   color: white;
   border: none;
@@ -142,39 +122,110 @@ section button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px auto;
   cursor: pointer;
-  width:80%;
-  
+  min-width: 80%;
+}
+section img {
+  max-width: 100%;
+  display: block;
 }
 .bio {
   grid-area: cards;
-  border: 1px solid lime;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.bio h1 {
+  padding-top: 5%;
+  font-size: 55px;
+  color: rgb(171, 112, 1);
 }
 .bio img {
   clip-path: circle();
-  width: 20%;
+  max-width: 20%;
+  height: auto;
 }
-
+#iLoveFood {
+  display: flex;
+  gap: 0.5em;
+  padding: 1em 0 1em 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+#iloveFoodSpan {
+  position: absolute;
+  font-size: 50px;
+  color: rgb(88, 18, 18);
+  background: rgba(204, 204, 204, 0.5);
+}
 /* End of cards and beginning the main content */
 
 .main {
   background-color: #8ab4f8;
   grid-area: main;
+  max-width: 100%;
+  height: fit-content;
+}
+.aboutMain {
+  grid-area: main;
+  max-width: 100%;
+  padding: 2%;
+}
+.aboutMain img {
+  max-width: 20%;
 }
 main h2 {
   font-size: 30px;
   color: rgb(2, 2, 2);
 }
-.map-view img {
-  margin: 0 auto;
-  display: block;
-  height: min-content;
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 1em;
+}
+.summaryOne {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  gap: 0.5em;
+  color: white;
+}
+#muttrah {
+  width: 100%;
+}
+.grandMosque {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+#grandMosqueSpanOne {
+  width: clamp(20%, 40%, 100%);
+}
+.summary span {
+  text-align: justify;
+}
+#Ohman {
+  position: absolute;
+  font-size: 50px;
+}
+#omaniShuwa {
+  max-width: 20%;
+}
+#muscatValley {
+  max-width: 55%;
 }
 main h2 {
   text-align: center;
   padding: 20px;
+}
+.quote {
+  font-size: 40px;
+  text-align: center;
 }
 
 /* The sidebar and chill */
@@ -202,6 +253,7 @@ main h2 {
 .most-popular {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 50px;
   padding-top: 50px;
 }
@@ -229,8 +281,6 @@ a {
   color: blue;
 }
 
-
-
 /* The footer starts  */
 footer {
   grid-area: footer;
@@ -249,7 +299,6 @@ footer {
   justify-content: space-between;
   padding-left: 20px;
 }
-
 
 .footer-social-icons {
   list-style: none;
@@ -287,8 +336,9 @@ select:focus,
 textarea:focus {
   border: 1px solid #00f;
 }
+
 /* For smaller screens  */
-@media only screen and (max-width:1024px) and (min-width: 768px)  {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 2fr;
@@ -301,10 +351,18 @@ textarea:focus {
       "sidebar"
       "footer";
   }
-  article section  {
-    flex-basis: 40%;
-    background-color: #00f;
-    
+  article section {
+    flex-grow: 1;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+  }
+  .grandMosque {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -321,11 +379,16 @@ textarea:focus {
       "footer";
   }
   .cards {
-display: flex;
-flex-basis: 1;
-flex-direction: column;
+    display: flex;
+    flex-basis: 1;
+    flex-direction: column;
   }
-  article section  {
-    flex-basis: 100%;  
+  article section {
+    flex-basis: 30%;
+    max-width: 100%;
+  }
+  .grandMosque {
+    display: flex;
+    flex-direction: column;
   }
 }
